@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: gold_daily_fraud_summary
+    columns:
+      - name: txn_date
+        tests:
+          - not_null
+          - unique
+  - name: gold_high_risk_users
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique

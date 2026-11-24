@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_upi
+    database: UPI_FRAUD_DB
+    schema: RAW
+    tables:
+      - name: RAW_UPI_TRANSACTIONS
+      - name: RAW_FRAUD_ALERTS
